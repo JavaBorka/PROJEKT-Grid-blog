@@ -77,7 +77,13 @@ footer {
 	grid-column: 2;
 }
 
-figure,
+figure {
+	grid-column: 1 / 4;
+	/* grid-column: span 3; */
+	margin-inline: 0;
+	margin-bottom: 40px;
+}
+
 blockquote {
 	grid-column: 1 / 4;
 }
@@ -90,16 +96,22 @@ blockquote {
 	grid-column: 3;
 }
 
-.img {
+img {
 	width: 100%;
 }
 
 .tip {
 	background-color: var(--svetla);
 	padding: 20px;
+	margin-top: 18px;
 	text-align: right;
 	color: var(--tmava);
 	border-right: 3px solid var(--zluta);
+	height: max-content;
+}
+
+.tip p {
+	margin: 0;
 }
 
 footer {
